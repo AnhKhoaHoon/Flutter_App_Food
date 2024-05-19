@@ -1,3 +1,4 @@
+import 'package:demo/common/custom_appbar.dart';
 import 'package:demo/common/custom_container.dart';
 import 'package:demo/constants/constants.dart';
 import 'package:flutter/material.dart';
@@ -10,7 +11,8 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: kPrimary,
-      appBar: PreferredSize(preferredSize: Size.fromHeight(130.h),child:Container(height:130,)),
+      appBar: PreferredSize(preferredSize: Size.fromHeight(130.h),
+      child:CustomAppBar()),
       body:SafeArea(
         child: CustomContainer(containerContent: Container()),
         ),
