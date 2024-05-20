@@ -11,7 +11,7 @@ class CategoryController extends GetxController {
   RxString _title = ''.obs;
   String get titleValue => _title.value;
 
-  set updateTilte(String value){
+  set updateTitle(String value){
     _title.value = value;
   }
 }
