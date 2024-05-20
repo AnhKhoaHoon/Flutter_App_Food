@@ -32,7 +32,7 @@ class AllCategories extends StatelessWidget {
               backgroundColor: kGrayLight,
               child:Image.network(category["imageUrl"], fit: BoxFit.contain,),
             ),
-            title: ReusableText(text:category['List'],
+            title: ReusableText(text:category['title'],
             style: appStyle(12, kGray, FontWeight.normal)),
             trailing: Icon(
               Icons.arrow_forward_ios_rounded,
