@@ -2,9 +2,11 @@ import 'package:demo/common/app_style.dart';
 import 'package:demo/common/reusable_text.dart';
 import 'package:demo/constants/constants.dart';
 import 'package:demo/constants/uidata.dart';
+import 'package:demo/controllers/category_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:get/get.dart';
 
 
 class CategoryList extends StatelessWidget {
@@ -12,6 +14,7 @@ class CategoryList extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final controller =Get.put(CategoryController());
     return Container(
       height:80.h,
       padding: EdgeInsets.only(left: 12.w,top:10.h),
